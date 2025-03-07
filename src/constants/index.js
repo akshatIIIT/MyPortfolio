@@ -1,5 +1,4 @@
 import {
-  mobile,
   backend,
   creator,
   web,
@@ -15,16 +14,22 @@ import {
   git,
   figma,
   docker,
-  meta,
   starbucks,
   tesla,
-  shopify,
-  carrent,
   jobit,
   tripguide,
+  meta,
   threejs,
 } from "../assets";
-
+import Port1 from "../assets/Port1.png";
+import eduwork from "../assets/eduwork.png";
+import oochi from "../assets/oochi.png";
+import Risc from "../assets/Risc.jpg";
+import shell from "../assets/shell.jpg";
+import chatportfolio from "../assets/chatportfolio.jpg";
+import ogo from "../assets/company/ogo.avif";
+import logo from "../assets/company/logo.png";
+import heydo from "../assets/company/heydo.jpeg";
 export const navLinks = [
   {
     id: "about",
@@ -42,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: " Fronted Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+  // {
+  //   title: "Aspiring React Native Developer",
+  //   icon: mobile,
+  // },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Competitive Programmer",
     icon: creator,
   },
 ];
@@ -116,55 +121,37 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Fronted Developer Intern",
+    company_name: "Heydo Tech (StartUp)",
+    icon: heydo,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2024 - July 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked with the Founder to design and develop responsive,user-friendly web interfaces using React.js.",
+      "Integrated APIs, optimized frontend performance, and ensured cross-browser compatibility for enhanced user experience.",
+      "Gained hands-on experience in the startup environment, learning to prioritize tasks and meet tight deadlines while maintaining high-quality standards.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "MENTOR",
+    company_name: "Physics Wallah",
+    icon: ogo,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jul 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Guiding over 1500+ students at PW, I deliver high-impact mentorship for JEE exam mastery and career direction.",
+      "My commitment is reflected in a stellar 95%+ audit score and a 4.8+ student rating out of 5, empowering students to achieve their highest potential and realize their career aspirations.",
     ],
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "E-Cell IIIT-DELHI",
+    icon: logo,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "As a Web Developer in the E-Cell club, I am responsible for managing and maintaining the college websites, ensuring smooth functionality and user experience. ",
+      "I also organize and support hackathon events, driving innovation and fostering a collaborative environment for aspiring entrepreneurs and tech enthusiasts.",
     ],
   },
 ];
@@ -198,67 +185,118 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "AngryBird Game",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a GUI based Angry Bird game using crossPlatform Java Game Development Framework and using OOPS Concept",
     tags: [
       {
-        name: "react",
+        name: "JAVA",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "LibGDX",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "OOPS",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Port1,
+    source_code_link: "https://github.com/akshatIIIT/MyAngryBird-Game",
   },
   {
-    name: "Job IT",
+    name: "EduWorks Platform",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Created an online platform to manage and showcase student projects, serving as a central hub for collaboration, progress tracking, and resource sharing, empowering students to bring their ideas to life.",
     tags: [
       {
-        name: "react",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "TailwindCSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: eduwork,
+    source_code_link: "https://github.com/akshatIIIT/HackathonProject",
   },
   {
-    name: "Trip Guide",
+    name: "OurChattingAPP",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developed a real-time chat app with Bcrypt authentication and AI-powered Question and Answer using OpenAI API and real-time communication with Socket.io",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "Node.js",
+        color: "white-text-gradient",
       },
       {
-        name: "supabase",
+        name: "EJS",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Socket.io",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restAPI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "white-text-gradient",
+      },
+    ],
+    image: chatportfolio,
+    source_code_link: "https://github.com/akshatIIIT/basic-chattingAPP",
+  },
+  {
+    name: "Fronted clone",
+    description:
+      "frontend clone of the Ochi website, designed to replicate its layout, design, and responsiveness. The was the first learning project to demonstrate proficiency in modern frontend technologies and design principles.",
+    tags: [
+      {
+        name: "react.js",
+        color: "white-text-gradient",
+      },
+      {
+        name: "TailwindCSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "GSAP",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: oochi,
+    source_code_link: "https://github.com/akshatIIIT/...ochi",
+  },
+  {
+    name: "Assembler and Simulator based on RISC-V",
+    description:
+      "Developed Python Programming-based Assembler and Simulator, which is centered on RISC V Instruction Set Architecture",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: Risc,
+    source_code_link: "https://github.com/akshatIIIT/basic-chattingAPP",
+  },
+  {
+    name: "Simple Shell",
+    description:
+      "Developed a custom SimpleShell in C to execute user commands, handle pipes,      maintain history, and support command execution details with error handling.",
+    tags: [
+      {
+        name: "C",
+        color: "green-text-gradient",
+      },
+    ],
+    image: shell,
+    source_code_link: "https://github.com/akshatIIIT/basic-chattingAPP",
   },
 ];
 
